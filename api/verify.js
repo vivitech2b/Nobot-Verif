@@ -13,7 +13,7 @@ export default async function handler(req, res) {
         // Remplace TA_API_KEY_ABUSE par ta clé gratuite
         const abuseResponse = await axios.get(`https://api.abuseipdb.com/api/v2/check`, {
             params: { ipAddress: clientIP, maxAgeInDays: 90 },
-            headers: { 'Key': 'TA_API_KEY_ABUSE', 'Accept': 'application/json' }
+            headers: { 'Key': '3ec22c847edeb00e0fcaa9eefd2fe976a30aa37cf16fcf8c164397e52ec1e591f60c5450dabc71ec ', 'Accept': 'application/json' }
         });
 
         const abuseScore = abuseResponse.data.data.abuseConfidenceScore;
